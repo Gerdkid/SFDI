@@ -1,0 +1,3 @@
+<template name="tabsLayout">
+	{{#ionBody}} {{#ionView}}{{#if currentUser}} {{> yield}}{{> _tabs}} {{else}}{{> _tabsHeaderOff}} {{#ionContent class="padding"}} {{> atForm}} {{/ionContent}}{{/if}} {{/ionView}} {{/ionBody}}
+</template>

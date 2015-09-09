@@ -12,8 +12,9 @@ Meteor.startup(function () {
 });
 
 Router.map(function() {
-  this.route('tabs.one', {path: '/', layoutTemplate: 'tabsLayout'});
-  this.route('tabs.two', {path: '/tabs/two', layoutTemplate: 'tabsLayout'});
-  this.route('tabs.three', {path: '/tabs/three', layoutTemplate: 'tabsLayout'});
-  this.route('tabs.four', {path: '/tabs/four', layoutTemplate: 'tabsLayout'});
+  this.route('home', {path: '/', layoutTemplate: 'tabsLayout'});
+  this.route('todolist', {path: '/todolist', layoutTemplate: 'tabsLayout'});
+  this.route('courses', {path: '/courses', layoutTemplate: 'tabsLayout'});
+  this.route('profile', {path: '/profile', layoutTemplate: 'tabsLayout'});
+  this.route('settings', {path: '/settings', layoutTemplate: 'tabsLayout'});
 });
