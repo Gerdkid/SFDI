@@ -2,9 +2,12 @@
 
  This Project directory is broken down into two directories. One for Backend app (REST-API) and One for the Frontend app(Mobile-App/mobile)
 
- Walk Through Video:
 
- ![alt text](http://recordit.co/5ZAbP0Om6z "Logo Title Text 1")
+## Here is a basic Walk Through Video to display the functionality of the App
+
+ Walk Through Video: http://recordit.co/5ZAbP0Om6z 
+
+ 
 
 ###1.) The REST-API app
 
