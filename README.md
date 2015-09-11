@@ -51,3 +51,7 @@ Profile:
 Settings: 
 
 ![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/8.png?token=AGzP6R4qmZAJ46YnhSXCJz0r0HBhdgNyks5V-6kCwA%3D%3D "Logo Title Text 1")
+
+- This App is built in Meteor 
+- The REST API get calls are in the ```server/rest-api.js```
+- This is where it calls the app that is running on localhost:5000 to populate the Todolist and Courses
