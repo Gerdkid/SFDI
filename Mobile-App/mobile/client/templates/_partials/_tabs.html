@@ -1,6 +1,6 @@
 <template name="_tabs">
 	{{#if isAndroid}} {{#ionTabs style="android" class="tabs-background-positive tabs-color-light"}} {{> ionTab title="Home" path="home" icon="android-home"}} {{> ionTab title="Todo List" path="todolist" icon="android-star"}} {{> ionTab title="Courses" path="courses"
 	icon="heart"}} {{> ionTab title="Profile" path="profile" icon="gear-b"}} {{> ionTab title="Settings" path="settings" icon="gear-b"}} {{/ionTabs}} {{else}} {{#ionTabs style="ios"}} {{> ionTab title="Home" path="home" iconOff="ios-home-outline" iconOn="ios-home"}}
-	{{> ionTab title="Todo List" path="todolist" iconOff="ios-star-outline" iconOn="ios-star"}} {{> ionTab title="Courses" path="courses" iconOff="ios-heart-outline" iconOn="ios-heart"}} {{> ionTab title="Profile" path="profile" iconOff="ios-gear-outline"
-	iconOn="ios-gear"}}{{> ionTab title="Settings" path="settings" iconOff="ios-gear-outline" iconOn="ios-gear"}} {{/ionTabs}} {{/if}}
+	{{> ionTab title="Todo List" path="todolist" iconOff="ios-list-outline" iconOn="ios-list"}} {{> ionTab title="Courses" path="courses" iconOff="ios-calendar-outline" iconOn="ios-calendar"}} {{> ionTab title="Profile" path="profile" iconOff="ios-person-outline"
+	iconOn="ios-person"}}{{> ionTab title="Settings" path="settings" iconOff="ios-settings" iconOn="ios-settings-strong"}} {{/ionTabs}} {{/if}}
 </template>

@@ -1,25 +1,24 @@
 <template name="home">
 	{{> tabsHeader}} {{#ionContent class="padding"}}
-	<div class="list list-inset">
+	<div class="list card">
+		<div class="item item-divider">
+			Welcome to the Home Page Nav
+		</div>
 
-
-		<a href="/todolist">
-			<div class="item">
-				Todolist
-			</div>
+		<a href="/todolist" class="item item-icon-left">
+			<i class="icon ion-ios-list-outline"></i> Todolist
 		</a>
 
-		<a href="/courses">
-			<div class="item">
-				Courses
-			</div>
+		<a href="/courses" class="item item-icon-left">
+			<i class="icon ion-ios-calendar-outline"></i> Courses
 		</a>
 
-		<a href="/profile">
-			<div class="item">
-				Profile
-			</div>
+		<a href="/profile" class="item item-icon-left">
+			<i class="icon ion-ios-person-outline"></i> Profile
 		</a>
+		<div class="item item-divider">
+			Click on any icon to get started
+		</div>
 
 	</div>
 	{{/ionContent}}
