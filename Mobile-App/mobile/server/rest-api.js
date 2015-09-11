@@ -10,17 +10,15 @@ Meteor.methods({
 		 });
 	 }
 });
-},
-});
-
-
 Meteor.http.get("http://localhost:3000/courses",function(err,result){
 if(!err){
   Courses.remove({});
   var courseData = result.data;
-  console.log("CourseData");
-  CourseData.forEach( function (arrayItem){
-    // Posts.insert(arrayItem);
+  console.log(courseData);
+  courseData.forEach( function (arrayItem){
+    Courses.insert(arrayItem);
     });
   }
+});
+}
 });

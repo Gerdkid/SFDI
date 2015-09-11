@@ -1,28 +1,23 @@
 <template name="todolist">
 	{{> tabsHeader}} {{#ionContent class="padding"}}
-	<div class="list">
-
-		<div class="item item-input-inset">
-			<label class="item-input-wrapper">
-				<input type="text" placeholder="Email">
-			</label>
-			<button class="button button-small">
-				Submit
-			</button>
+	<div class="card">
+		<div class="item item-text-wrap">
+			Click the refresh button in the upper left hand corner to fire the REST API
 		</div>
-		{{#each exampleList}}
-		<ul class="list">
+	</div>{{#each exampleList}}
+	<ul class="list">
 
-			<li class="item item-checkbox">
-				<label class="checkbox">
-					<input type="checkbox" checked="{{completed}}">
-				</label>
-				{{name}}
-			</li>
-		</ul>
+		<li class="item item-checkbox">
+			<label class="checkbox">
+				<input type="checkbox" checked="{{completed}}">
+			</label>
+			<h2>{{name}}</h2>
+			<br>
+			<p>{{note}}</p>
+			<br>
+			<p>{{updated_at}}</p>
+		</li>
+	</ul>
 
-		{{/each}}
-
-	</div>
-	{{/ionContent}}
+	{{/each}} {{/ionContent}}
 </template>

@@ -1,12 +1,20 @@
 <template name="courses">
 	{{> tabsHeader}} {{#ionContent class="padding"}}
-	<div class="list">
 
+	<div class="list">
+		<div class="card">
+			<div class="item item-text-wrap">
+				Click the refresh button in the upper left hand corner to fire the REST API
+			</div>
+		</div>
+		{{#each CourseList}}
 		<a class="item item-thumbnail-left" href="#">
 			<img src="cover.jpg">
-			<h2>Pretty Hate Machine</h2>
-			<p>Nine Inch Nails</p>
+			<h2>{{CourseName}}</h2>
+			<h3>{{Year}}</h3>
+			<p>{{note}}</p>
 		</a>
+		{{/each}}
 	</div>
 	{{/ionContent}}
 </template>
