@@ -12,9 +12,7 @@
 	<h1>
 		<%= title %>
 	</h1>
-
-	<h2> Todolist Section</h2>
-	<a href="/courseslist">Go to Course List</a>
+	<a href="/">Go to Todolist</a>
 	<br>
 	<br>
 
@@ -26,27 +24,27 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-resource.min.js"></script>
 
 	<!-- Template -->
-	<script type="text/ng-template" id="/todos.html">
+	<script type="text/ng-template" id="/courses.html">
 
 		Search:
 		<input type="text" ng-model="search.name">
 		<ul>
-			<li ng-repeat="todo in todos | filter: search">
-				<input type="checkbox" ng-model="todo.completed" ng-change="update($index)">
-				<h4 ng-show="!editing[$index]">{{todo.name}}</h4>
-				<p ng-show="!editing[$index]">{{todo.note}}</p>
+			<li ng-repeat="course in courses | filter: search">
+				<input type="checkbox" ng-model="course.completed" ng-change="update($index)">
+				<h4 ng-show="!editing[$index]">{{course.CourseName}}</h4>
+				<p ng-show="!editing[$index]">{{course.note}}</p>
 				<button ng-show="!editing[$index]" ng-click="edit($index)">edit</button>
 				<button ng-show="!editing[$index]" ng-click="remove($index)">remove</button>
 
-				<input ng-show="editing[$index]" type="text" ng-model="todo.name">
-				<input ng-show="editing[$index]" type="textarea" ng-model="todo.note">
+				<input ng-show="editing[$index]" type="text" ng-model="course.CourseName">
+				<input ng-show="editing[$index]" type="textarea" ng-model="course.note">
 				<button ng-show="editing[$index]" ng-click="update($index)">update</button>
 				<button ng-show="editing[$index]" ng-click="cancel($index)">cancel</button>
 			</li>
 		</ul>
 		New task
-		<input type="text" placeholder="New Todo" ng-model="newTodo">
-		<input type="text" placeholder="New Todo Note" ng-model="newTodoNote">
+		<input type="text" placeholder="Course Name" ng-model="newCourse">
+		<input type="textarea" placeholder="Course Note" ng-model="newCourseNote">
 		<button ng-click="save()">Create</button>
 	</script>
 
@@ -57,8 +55,8 @@
 		// Services
 		//---------------
 
-		.factory('Todos', ['$resource', function($resource) {
-			return $resource('/todos/:id', null, {
+		.factory('Courses', ['$resource', function($resource) {
+			return $resource('/courses/:id', null, {
 				'update': {
 					method: 'PUT'
 				}
@@ -69,48 +67,47 @@
 		// Controllers
 		//---------------
 
-		.controller('TodoController', ['$scope', 'Todos', function($scope, Todos) {
+		.controller('CourseController', ['$scope', 'Courses', function($scope, Courses) {
 			$scope.editing = [];
-			$scope.todos = Todos.query();
+			$scope.courses = Courses.query();
 
 			$scope.save = function() {
-				if (!$scope.newTodo || $scope.newTodo.length < 1) return;
-				var todo = new Todos({
-					name: $scope.newTodo,
-					note: $scope.newTodoNote,
-					completed: false
+				if (!$scope.newCourse || $scope.newCourse.length < 1) return;
+				var course = new Courses({
+					CourseName: $scope.newCourse,
+					note: $scope.newCourseNote,
 				});
 
-				todo.$save(function() {
-					$scope.todos.push(todo);
-					$scope.newTodo = ''; // clear textbox
-					$scope.newTodoNote = '';
+				course.$save(function() {
+					$scope.courses.push(course);
+					$scope.newCourse = ''; // clear textbox
+					$scope.newCourseNote = '';
 				});
 			}
 
 			$scope.update = function(index) {
-				var todo = $scope.todos[index];
-				Todos.update({
-					id: todo._id
-				}, todo);
+				var course = $scope.courses[index];
+				Courses.update({
+					id: course._id
+				}, course);
 				$scope.editing[index] = false;
 			}
 
 			$scope.edit = function(index) {
-				$scope.editing[index] = angular.copy($scope.todos[index]);
+				$scope.editing[index] = angular.copy($scope.courses[index]);
 			}
 
 			$scope.cancel = function(index) {
-				$scope.todos[index] = angular.copy($scope.editing[index]);
+				$scope.courses[index] = angular.copy($scope.editing[index]);
 				$scope.editing[index] = false;
 			}
 
 			$scope.remove = function(index) {
-				var todo = $scope.todos[index];
-				Todos.remove({
-					id: todo._id
+				var course = $scope.courses[index];
+				Courses.remove({
+					id: course._id
 				}, function() {
-					$scope.todos.splice(index, 1);
+					$scope.courses.splice(index, 1);
 				});
 			}
 		}])
@@ -122,8 +119,8 @@
 		.config(['$routeProvider', function($routeProvider) {
 			$routeProvider
 				.when('/', {
-					templateUrl: '/todos.html',
-					controller: 'TodoController'
+					templateUrl: '/courses.html',
+					controller: 'CourseController'
 				})
 
 		}]);
