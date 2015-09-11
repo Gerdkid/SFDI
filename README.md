@@ -27,11 +27,27 @@ Preview of Backend App Courses Page:
 - 
 
 Login: 
+
 ![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/3.png?token=AGzP6QobQxc4vNLhRA4DqDW_yjD5W6exks5V-6gvwA%3D%3D "Logo Title Text 1")
 
 
 Home: 
+
 ![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/4.png?token=AGzP6d1Lgdr1r9DKKxBVeOGh3XBMTlc5ks5V-6hhwA%3D%3D "Logo Title Text 1")
 
 Todolist: 
+
 ![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/5.png?token=AGzP6chD_Urra526nW9qm-aC-pFACF4lks5V-6iCwA%3D%3D "Logo Title Text 1")
+
+Courses: 
+
+![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/6.png?token=AGzP6V9XPKiIAXOYbvEFWH6Jp370_1-Dks5V-6iqwA%3D%3D "Logo Title Text 1")
+
+Profile: 
+
+![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/7.png?token=AGzP6V1AADH0e-Q6ya76Ss6toKmp7dXFks5V-6jdwA%3D%3D "Logo Title Text 1")
+
+
+Settings: 
+
+![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/8.png?token=AGzP6R4qmZAJ46YnhSXCJz0r0HBhdgNyks5V-6kCwA%3D%3D "Logo Title Text 1")
