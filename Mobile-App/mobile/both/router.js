@@ -1,3 +1,5 @@
+//Sets up Router for the navigation at the Bottom of the tab
+
 Router.configure({
   layoutTemplate: 'layout'
 });
@@ -12,9 +14,9 @@ Meteor.startup(function () {
 });
 
 Router.map(function() {
-  this.route('home', {path: '/', layoutTemplate: 'tabsLayout'});
-  this.route('todolist', {path: '/todolist', layoutTemplate: 'tabsLayout'});
-  this.route('courses', {path: '/courses', layoutTemplate: 'tabsLayout'});
-  this.route('profile', {path: '/profile', layoutTemplate: 'tabsLayout'});
-  this.route('settings', {path: '/settings', layoutTemplate: 'tabsLayout'});
+  this.route('home', {path: '/', layoutTemplate: 'appLayout'});
+  this.route('todolist', {path: '/todolist', layoutTemplate: 'appLayout'});
+  this.route('courses', {path: '/courses', layoutTemplate: 'appLayout'});
+  this.route('profile', {path: '/profile', layoutTemplate: 'appLayout'});
+  this.route('settings', {path: '/settings', layoutTemplate: 'appLayout'});
 });

@@ -1,4 +1,4 @@
-Template.tabsHeader.events({
+Template.appHeaderLoggedOn.events({
   'click [data-action=logout]': function () {
     AccountsTemplates.logout();
   },

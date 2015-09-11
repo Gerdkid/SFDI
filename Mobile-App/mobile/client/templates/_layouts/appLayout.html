@@ -1,0 +1,3 @@
+<template name="appLayout">
+	{{#ionBody}} {{#ionView}}{{#if currentUser}} {{> yield}}{{> _app}} {{else}}{{> _appHeaderLoggedOff}} {{#ionContent class="padding"}} {{> atForm}} {{/ionContent}}{{/if}} {{/ionView}} {{/ionBody}}
+</template>
