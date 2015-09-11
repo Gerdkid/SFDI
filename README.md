@@ -2,6 +2,10 @@
 
  This Project directory is broken down into two directories. One for Backend app (REST-API) and One for the Frontend app(Mobile-App/mobile)
 
+ Walk Through Video:
+
+ ![alt text](http://recordit.co/5ZAbP0Om6z "Logo Title Text 1")
+
 ###1.) The REST-API app
 
 - This app is started by running ```nodemon``` which which will launch the app on ```localhost:5000```
@@ -24,34 +28,34 @@ Preview of Backend App Courses Page:
 
 - This app is started by running ```meteor run ios``` in the ```Mobile-App/mobile/``` directory which will launch the app on ```localhost:3000```. However, this will launch the IOS simulator to run the app
 - You will be prompt to register an account to login and then get access to the rest of the app
-- 
+-
 
-Login: 
+Login:
 
 ![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/3.png?token=AGzP6QobQxc4vNLhRA4DqDW_yjD5W6exks5V-6gvwA%3D%3D "Logo Title Text 1")
 
 
-Home: 
+Home:
 
 ![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/4.png?token=AGzP6d1Lgdr1r9DKKxBVeOGh3XBMTlc5ks5V-6hhwA%3D%3D "Logo Title Text 1")
 
-Todolist: 
+Todolist:
 
 ![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/5.png?token=AGzP6chD_Urra526nW9qm-aC-pFACF4lks5V-6iCwA%3D%3D "Logo Title Text 1")
 
-Courses: 
+Courses:
 
 ![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/6.png?token=AGzP6V9XPKiIAXOYbvEFWH6Jp370_1-Dks5V-6iqwA%3D%3D "Logo Title Text 1")
 
-Profile: 
+Profile:
 
 ![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/7.png?token=AGzP6V1AADH0e-Q6ya76Ss6toKmp7dXFks5V-6jdwA%3D%3D "Logo Title Text 1")
 
 
-Settings: 
+Settings:
 
 ![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/8.png?token=AGzP6R4qmZAJ46YnhSXCJz0r0HBhdgNyks5V-6kCwA%3D%3D "Logo Title Text 1")
 
-- This App is built in Meteor 
+- This App is built in Meteor
 - The REST API get calls are in the ```server/rest-api.js```
 - This is where it calls the app that is running on localhost:5000 to populate the Todolist and Courses
