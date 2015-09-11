@@ -11,5 +11,8 @@
 Preview of Backend App Index:
 ![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/1.png?token=AGzP6ZrIyhoOWNBVnokUDDnVWtIpak3Tks5V-6KnwA%3D%3D "Logo Title Text 1")
 
-Preview of Backend App Index:
-![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/1.png?token=AGzP6ZrIyhoOWNBVnokUDDnVWtIpak3Tks5V-6KnwA%3D%3D "Logo Title Text 1")
+Preview of Backend App Courses Page:
+![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/2.png?token=AGzP6TOH5xj8e6yqZ732yYXLf9ZS2Q02ks5V-6T5wA%3D%3D "Logo Title Text 1")
+
+- From there the REST API is created in the ```routes/courses.js``` and ```routes/todos.js```
+- The Collection are defined in the ```models/Courses.js``` and ```models/Todos.js```
