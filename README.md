@@ -27,4 +27,11 @@ Preview of Backend App Courses Page:
 - 
 
 Login: 
-![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/1.png?token=AGzP6ZrIyhoOWNBVnokUDDnVWtIpak3Tks5V-6KnwA%3D%3D "Logo Title Text 1")
+![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/3.png?token=AGzP6QobQxc4vNLhRA4DqDW_yjD5W6exks5V-6gvwA%3D%3D "Logo Title Text 1")
+
+
+Home: 
+![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/4.png?token=AGzP6d1Lgdr1r9DKKxBVeOGh3XBMTlc5ks5V-6hhwA%3D%3D "Logo Title Text 1")
+
+Todolist: 
+![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/5.png?token=AGzP6chD_Urra526nW9qm-aC-pFACF4lks5V-6iCwA%3D%3D "Logo Title Text 1")
