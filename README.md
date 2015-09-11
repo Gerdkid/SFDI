@@ -10,3 +10,6 @@
 
 Preview of Backend App Index:
 ![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/1.png?token=AGzP6ZrIyhoOWNBVnokUDDnVWtIpak3Tks5V-6KnwA%3D%3D "Logo Title Text 1")
+
+Preview of Backend App Index:
+![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/1.png?token=AGzP6ZrIyhoOWNBVnokUDDnVWtIpak3Tks5V-6KnwA%3D%3D "Logo Title Text 1")
