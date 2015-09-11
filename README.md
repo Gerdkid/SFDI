@@ -23,3 +23,8 @@ Preview of Backend App Courses Page:
 ###2.) The Front End App
 
 - This app is started by running ```meteor run ios``` in the ```Mobile-App/mobile/``` directory which will launch the app on ```localhost:3000```. However, this will launch the IOS simulator to run the app
+- You will be prompt to register an account to login and then get access to the rest of the app
+- 
+
+Login: 
+![alt text](https://raw.githubusercontent.com/Gerdkid/SFDI/master/WalkThroughImages/1.png?token=AGzP6ZrIyhoOWNBVnokUDDnVWtIpak3Tks5V-6KnwA%3D%3D "Logo Title Text 1")
